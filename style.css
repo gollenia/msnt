@@ -34,6 +34,10 @@ header {
 }
 
 @media only screen and ( max-width: 600px ) {
+	.msn-icon-card {
+		margin-top: 5rem !important;
+	}
+
 	.wp-block-navigation__container {
 		width: 100%;
 		gap: 0 !important;
@@ -285,7 +289,9 @@ header {
 }
 
 .wp-block-latest-posts__post-title {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	display: block;
 }
 
 .wp-block-latest-posts time {
