@@ -349,6 +349,14 @@
 					}
 				}
 			},
+			"core/list": {
+				"spacing": {
+					"margin": {
+						"bottom": "1.25rem"
+					}
+				},
+				"css": "li::before{content:'\\2022';margin-right:0.5em;}"
+			},
 			"core/quote": {
 				"border": {
 					"width": "1px"

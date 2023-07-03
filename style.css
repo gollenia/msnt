@@ -18,7 +18,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 	font-size: 12px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and ( max-width: 768px ) {
 	body .is-layout-constrained > .alignwide {
 		width: 100vw;
 		margin-left: -1.5rem !important;
@@ -27,17 +27,17 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 }
 
 header {
-	top: var(--wp-admin--admin-bar--height);
+	top: var( --wp-admin--admin-bar--height );
 	position: sticky;
 	z-index: 10;
-	background: var(--wp--preset--color--base);
+	background: var( --wp--preset--color--base );
 }
 
 .current-menu-item {
 	color: #aaa;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and ( min-width: 600px ) {
 	.msn-topbar p {
 		font-size: 14px;
 	}
@@ -69,7 +69,7 @@ header {
 	.wp-block-search__inside-wrapper::before {
 		position: absolute;
 		content: '';
-		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIj48cGF0aCBkPSJNNzk2LTEyMSA1MzMtMzg0cS0zMCAyNi02OS45NTkgNDAuNVQzNzgtMzI5cS0xMDguMTYyIDAtMTgzLjA4MS03NVExMjAtNDc5IDEyMC01ODV0NzUtMTgxcTc1LTc1IDE4MS41LTc1dDE4MSA3NVE2MzItNjkxIDYzMi01ODQuODUgNjMyLTU0MiA2MTgtNTAycS0xNCA0MC00MiA3NWwyNjQgMjYyLTQ0IDQ0Wk0zNzctMzg5cTgxLjI1IDAgMTM4LjEyNS01Ny41VDU3Mi01ODVxMC04MS01Ni44NzUtMTM4LjVUMzc3LTc4MXEtODIuMDgzIDAtMTM5LjU0MiA1Ny41UTE4MC02NjYgMTgwLTU4NXQ1Ny40NTggMTM4LjVRMjk0LjkxNy0zODkgMzc3LTM4OVoiLz48L3N2Zz4=');
+		background-image: url( 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIj48cGF0aCBkPSJNNzk2LTEyMSA1MzMtMzg0cS0zMCAyNi02OS45NTkgNDAuNVQzNzgtMzI5cS0xMDguMTYyIDAtMTgzLjA4MS03NVExMjAtNDc5IDEyMC01ODV0NzUtMTgxcTc1LTc1IDE4MS41LTc1dDE4MSA3NVE2MzItNjkxIDYzMi01ODQuODUgNjMyLTU0MiA2MTgtNTAycS0xNCA0MC00MiA3NWwyNjQgMjYyLTQ0IDQ0Wk0zNzctMzg5cTgxLjI1IDAgMTM4LjEyNS01Ny41VDU3Mi01ODVxMC04MS01Ni44NzUtMTM4LjVUMzc3LTc4MXEtODIuMDgzIDAtMTM5LjU0MiA1Ny41UTE4MC02NjYgMTgwLTU4NXQ1Ny40NTggMTM4LjVRMjk0LjkxNy0zODkgMzc3LTM4OVoiLz48L3N2Zz4=' );
 		background-repeat: no-repeat;
 		height: 100%;
 		width: 2rem;
@@ -93,19 +93,20 @@ header {
 	}
 
 	.wp-block-navigation-item__content {
-		padding: 3px 4px;
-		border-radius: 99px;
+		padding: 0.5rem 1rem;
+		transition: all 100ms ease-in-out;
 	}
 
 	.wp-block-navigation-item__content:hover {
-		background: #aecbde;
+		background: var( --wp--preset--color--primary );
+		color: #fff !important;
 	}
 
 	.wp-block-post-title {
 		display: inline-block;
 		background: #fff;
 		padding: 1rem;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
 	}
 }
 
@@ -120,8 +121,8 @@ header {
 
 .wp-block-latest-posts li:hover {
 	background: #fff;
-	transform: scale(1.05);
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	transform: scale( 1.05 );
+	box-shadow: 0 0 15px rgba( 0, 0, 0, 0.1 );
 }
 
 .wp-block-latest-posts a.wp-block-latest-posts__post-title,
@@ -150,6 +151,53 @@ header {
 .msn-card .msn-card-content {
 	width: 90%;
 	left: 50%;
-	transform: translate(0, -3rem);
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	transform: translate( 0, -3rem );
+	box-shadow: 0 0 15px rgba( 0, 0, 0, 0.2 );
+}
+
+.msn-card img {
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
+
+li::marker {
+	color: #aaa;
+	content: url( 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgidmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjODJjMWU5Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bS0yIDE1LTUtNSAxLjQxLTEuNDFMMTAgMTQuMTdsNy41OS03LjU5TDE5IDhsLTkgOXoiLz48L3N2Zz4=' );
+}
+
+hr {
+	margin: 80px auto 40px;
+	width: 80%;
+	position: relative;
+	overflow: hidden;
+	height: 20px;
+	border: none !important;
+}
+
+hr::before {
+}
+
+hr::after {
+	content: '';
+	display: block;
+	margin: -25px auto 0;
+	width: 100%;
+	height: 25px;
+	border-radius: 125px/12px;
+	box-shadow: 0 0 16px rgba( 0, 0, 0, 0.2 ), 0 0 5px rgba( 0, 0, 0, 0.4 );
+}
+
+.msn-icon-card {
+	position: relative;
+	background-color: #eaecef;
+}
+
+.msn-icon-card i {
+	background: #f7f9fb;
+	border-radius: 999px;
+	padding: 1rem;
+	aspect-ratio: 1/1;
+	margin-top: -5rem;
+	border: 7px solid #eaecef;
+	box-shadow: 0 0 0 5px #f7f9fb;
 }

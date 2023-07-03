@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "msn/icon",
+  "title": "Icon",
+  "category": "widgets",
+  "keywords": [
+    "icon",
+    "symbol"
+  ],
+  "textdomain": "msn",
+  "description": "Show an icon",
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "sentiment_satisfied"
+    },
+    "size": {
+      "type": "number",
+      "default": 24
+    },
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "customColor": {
+      "type": "string"
+    }
+  },
+  "editorStyle": "wp-block-icon",
+  "supports": {
+    "html": false,
+    "textAlign": true,
+    "color": {
+      "custom": true,
+      "text": true
+    }
+  }
+}

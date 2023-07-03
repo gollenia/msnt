@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Card
+ * Title: Karte
  * Slug: school/card
  * Categories: featured
  * Keywords: Card

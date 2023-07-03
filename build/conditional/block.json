@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "msn/conditional",
+  "title": "Zeitlich begrenzte Blöcke",
+  "category": "formatting",
+  "keywords": [
+    "date",
+    "time",
+    "country",
+    "user"
+  ],
+  "textdomain": "msn",
+  "description": "Zeige Blöcke nur an bestimmten Tagen",
+  "attributes": {
+    "fromDate": {
+      "type": "string",
+      "default": ""
+    },
+    "toDate": {
+      "type": "string",
+      "default": ""
+    },
+    "hideWithinDateRange": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorStyle": "wp-block-alert-editor"
+}
