@@ -3,7 +3,7 @@
 require_once('block.php');
 
 function msn_add_css() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, '1.1', 'all');
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/build/style-index.css', false, '1.1', 'all');
 	wp_enqueue_style( 'icons', get_template_directory_uri() . '/assets/css/icons.css', false, '1.1', 'all');
 	wp_enqueue_script( 'menu', get_template_directory_uri() . '/assets/menu.js', [], 1.1, true);
 }
