@@ -1,12 +1,15 @@
-/*Author: the WordPress team
-Author URI: https://wordpress.org
-Description: Site Builder Theme 
-Requires at least: 6.1
-Tested up to: 6.2
-Requires PHP: 5.6
-Version: 1.1
+/*
+Theme Name: MS Nonntal
+Theme URI: https://github.com/gollenia/msnt
+Author: Thomas Gollenia
+Author URI: https://ms-nonntal.at/
+Description: Dieses Theme wurde für die MS Nonntal entwickelt. Es basiert auf dem Block-Editor und dem Twenty Twenty-Three Theme.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 6.3.1
+Requires PHP: 8.0
 License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-Text Domain: twentytwentythree
-Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ctx-msnt
 */
