@@ -15,7 +15,7 @@ function msn_block_init() {
 	$script_asset = require( $script_asset_path );
 	wp_register_script(
 		'msn-block-editor',
-		'/wp-content/themes/schule/' . $index_js,
+		get_template_directory_uri() . $index_js,
 		$script_asset['dependencies'],
 		$script_asset['version']
 	);
@@ -24,7 +24,7 @@ function msn_block_init() {
 	$editor_css = 'build/index.css';
 	wp_register_style(
 		'msn-block-editor',
-		'/wp-content/themes/schule/' . $editor_css,
+		get_template_directory_uri() . $editor_css,
 		array(),
 		filemtime( "$dir/$editor_css" )
 	);
@@ -32,7 +32,7 @@ function msn_block_init() {
 	$style_css = 'build/style-index.css';
 	wp_register_style(
 		'msn-block',
-		'/wp-content/themes/schule/' . $style_css,
+		get_template_directory_uri() . $style_css,
 		array(),
 		filemtime( "$dir/$style_css" )
 	);
