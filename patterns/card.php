@@ -8,7 +8,8 @@
 ?>
 
 <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|30"},"blockGap":"0"},"border":{"radius":"0px"}},"className":"msn-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group msn-card" style="border-radius:0px;padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:image {"id":14,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px"}}} -->
+<div class="wp-block-group msn-card" style="border-radius:0px;padding-bottom:var(--wp--preset--spacing--30)">
+<!-- wp:image {"id":14,"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px"}}} -->
 <figure class="wp-block-image size-large has-custom-border"><img src="https://picsum.photos/seed/picsum/800/600" alt="" class="wp-image-14" style="border-radius:0px"/></figure>
 <!-- /wp:image -->
 
